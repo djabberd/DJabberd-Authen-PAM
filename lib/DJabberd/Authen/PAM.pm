@@ -9,6 +9,17 @@ sub log {
     $logger;
 }
 
+sub set_config_service {
+    my ($self, $service) = @_;
+    $self->{service} = $service;
+}
+
+sub finalize {
+    my $self = shift;
+    $self->{service} ||= "ssh";
+    $logger->info("Authenticating with PAM service ".$self->{service});
+}
+
 sub can_retrieve_cleartext { 0 }
 
 sub check_cleartext {
@@ -22,7 +33,7 @@ sub check_cleartext {
         return;
     }
 
-    my $service = "ssh"; # TODO: config option!
+    my $service = $self->{service};
 
     # stolen from Authen::Simple::PAM:
     my $handler = sub {
