@@ -1,0 +1,5 @@
+libdjabberd-authen-pam-perl (0.85-1) unstable; urgency=low
+
+  * Initial packaging 
+
+ -- Dominik Schulz (tex) <lkml@ds.gauner.org>  Sun, 19 Feb 2012 17:45:33 +0100
