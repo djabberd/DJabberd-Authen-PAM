@@ -1,5 +1,5 @@
 tmp/
-libdjabberd-authen-mysql-perl/
+libdjabberd-authen-pam-perl/
 *.debhelper
 *.debhelper.log
 *.substvars
