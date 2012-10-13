@@ -1,0 +1,6 @@
+tmp/
+libdjabberd-authen-pam-perl/
+*.debhelper
+*.debhelper.log
+*.substvars
+files

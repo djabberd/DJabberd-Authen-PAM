@@ -5,6 +5,8 @@ use Authen::PAM      qw[:constants];
 use DJabberd::Log;
 our $logger = DJabberd::Log->get_logger;
 
+our $VERSION = '0.85';
+
 sub log {
     $logger;
 }
@@ -107,3 +109,36 @@ sub check_cleartext {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+DJabberd::Authen::PAM - PAM authentificator for DJabberd.
+
+=head1 COPYRIGHT
+
+This module is Copyright (c) 2006 Six Apart, Ltd.
+All rights reserved.
+
+You may distribute under the terms of either the GNU General Public
+License or the Artistic License, as specified in the Perl README file.
+
+=head1 WARRANTY
+
+This is free software. IT COMES WITHOUT WARRANTY OF ANY KIND.
+
+=head1 WEBSITE
+
+Visit:
+
+   http://danga.com/djabberd/
+
+=head1 AUTHORS
+
+Brad Fitzpatrick <brad@danga.com>
+
+Artur Bergman <sky@crucially.net>
+
+Jonathan Steinert <jsteinert@sixapart.com>
+

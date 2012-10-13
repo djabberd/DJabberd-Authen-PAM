@@ -1,0 +1,9 @@
+META.yml
+Makefile
+blib/
+pm_to_blib
+*~
+.*
+!.gitignore
+build-stamp
+install-stamp
